@@ -1,15 +1,17 @@
 window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
-      event: 'view_item_list',              // name of the event. In this case, it always must be view_item_list
+      event: 'view_item_list',                // name of the event. In this case, it always must be view_item_list
       ecommerce: {                          
-        items: [{                           // an array where all currently viewed products must be included
-          item_name: 'Jacquard Maxi Dress', // insert an actual product name
-          item_id: 'CAT24-021564',              // insert an actual product ID AKA SKU
-          price: 200,                   // insert an actual product price. Don't include currency code
-          discount: 100,                 // insert the product discount Don't include currency code
+        items: [{                             // an array where all currently viewed products must be included
+          item_name: 'Jacquard Maxi Dress',   // insert an actual product name
+          item_id: 'CAT24-021564',             // insert an actual product ID AKA SKU
+          price: 200,                          // insert an actual product price. Don't include currency code
+          discount: 100,                       // insert the product discount Don't include currency code
           currency: "SAR",
-          item_brand: 'Brand A',            // insert an actual product Brand
-          item_category: 'Category A',         // insert an actual product top-level category " this optional to you " 
+          item_brand: 'Brand A',                // insert an actual product Brand
+          item_category: 'Category A',          // insert an actual product top-level category " this optional to you " 
+          item_list_name: 'Loungewear',                   // insert the name of the list where the product is currently displayed
+          item_list_id: 'CATID',       // insert the list id where the product is currently displayed
         },{
           item_name: 'Jacquard Maxi Dress',
           item_id: 'CAT24-021564', 
@@ -18,6 +20,8 @@ window.dataLayer = window.dataLayer || [];
           currency: "SAR",
           item_brand: 'Brand B',
           item_category: 'Category B',
+          item_list_name: 'Search results', // insert the name of the list where the product is currently displayed
+          item_list_id: 'search_results',   // insert the list id where the product is currently displayed
         }]
       }
     });
