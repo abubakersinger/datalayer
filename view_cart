@@ -1,0 +1,30 @@
+<script>
+//this event must Fire in Cart page
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'view_cart',
+  ecommerce: {
+    currency:'SAR',
+    value: 120,                            //the value of all cart items
+    items: [{                               //all items in the cart 
+      item_name: 'Finnish magical parka',     // item name 
+      item_id: 'mp1122',                     //SKU
+      price: '30',                        // the price of the item
+      discount: 19,                          //item discount 
+      currency: "SAR"
+      item_brand: 'PARKA4LIFE',          
+      item_category: 'Apparel',
+      quantity: '3'
+    },{
+      item_name: 'Parka stain removal',
+      item_id: 'psr1332',
+      price: '30',
+      discount: 10,
+      currency: "SAR"
+      item_brand: 'PARKA4LIFE',
+      item_category: 'Apparel',
+      quantity: '1'
+    }]
+  }
+});
+</script>
