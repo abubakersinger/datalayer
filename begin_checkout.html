@@ -1,0 +1,32 @@
+<script>
+//this must Fire when the user 
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'begin_checkout',              // name of the event. In this case, it always must be begin_checkout
+      ecommerce: { 
+        currency: 'SAR',  
+        value: 23456,
+        coupon: 'APP10',                           
+        items: [{                           // an array with all products (that were in a cart when the checkout began)
+          item_name: 'Product 1',           // insert an actual product name
+          item_id: 'product1',              // insert an actual product ID
+          price: '11.99',                   // insert an actual product price. Number or a string. Don't include currency code
+          discount: 205,
+          currency: "SAR"
+          item_brand: 'brand A',            // insert an actual product price
+          item_category: 'Apparel',         // insert an actual product top-level category
+          quantity: '1'                     // product quantity in the cart
+        },{
+          item_name: 'Product 2',
+          item_id: 'product2',
+          price: '12.99',
+          discount: 205,
+          currency: "SAR"
+          item_brand: 'Brand B',
+          item_category: 'Category B',
+          quantity: '1'
+        }]
+      }
+    });
+    
+    </script>
