@@ -11,7 +11,7 @@ window.dataLayer.push({
       item_id: 'mp1122',                     //SKU
       price: '30',                        // the price of the item
       discount: 19,                          //item discount 
-      currency: "SAR"
+      coupon: "AR123"                          
       item_brand: 'PARKA4LIFE',          
       item_category: 'Apparel',
       quantity: '3'
@@ -21,6 +21,7 @@ window.dataLayer.push({
       price: '30',
       discount: 10,
       currency: "SAR"
+      coupon: "AR123"
       item_brand: 'PARKA4LIFE',
       item_category: 'Apparel',
       quantity: '1'
