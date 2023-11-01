@@ -4,7 +4,7 @@
       event: 'add_payment_info',            // name of the event. In this case, it always must be add_payment_info
       ecommerce: {
         currency: 'SAR',  
-        value: 23456,
+        value: 25,
         coupon: 'APP10',  
         payment_type: 'cridet card',             // name of the payment method                 
         items: [{                           // an array with all products
@@ -15,9 +15,6 @@
           currency: "SAR",
           item_brand: 'brand A',            // insert an actual product price
           item_category: 'Apparel',         // insert an actual product top-level category
-          item_category2: 'T-shirt',        // if it is possible to drill down the categories (e.g. Apparel, then T-shirt, then Men), use item_category2, item_category3, etc. Can use from item_category up to item_category5
-          promotion_id: 'pro_123',                //if the user come from promotion id push it 
-          promotion_name: 'all-offer.html',       // same thing to promotion id
           quantity: '1'                     // product quantity during the checkout
         },{
           item_name: 'Product 2',
@@ -27,8 +24,6 @@
           currency: "SAR",
           item_brand: 'Brand B',
           item_category: 'Category B',
-          promotion_id: 'pro_123',                //if the user come from promotion id push it 
-          promotion_name: 'all-offer.html',       // same thing to promotion id
           quantity: '1'
         }]
       }
