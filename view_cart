@@ -6,12 +6,12 @@ window.dataLayer.push({
   ecommerce: {
     currency:'SAR',
     value: 120,                            //the value of all cart items
+    coupon: "AR123"
     items: [{                               //all items in the cart 
       item_name: 'Finnish magical parka',     // item name 
       item_id: 'mp1122',                     //SKU
       price: '30',                        // the price of the item
-      discount: 19,                          //item discount 
-      coupon: "AR123"                          
+      discount: 19,                          //item discount                           
       item_brand: 'PARKA4LIFE',          
       item_category: 'Apparel',
       quantity: '3'
@@ -21,7 +21,6 @@ window.dataLayer.push({
       price: '30',
       discount: 10,
       currency: "SAR"
-      coupon: "AR123"
       item_brand: 'PARKA4LIFE',
       item_category: 'Apparel',
       quantity: '1'
