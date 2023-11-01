@@ -1,0 +1,24 @@
+<script>
+//this must fire only after the User add some thing to Cart 
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'add_to_cart',             // name of the event. In this case, it always must be add_to_cart
+      ecommerce: { 
+        currency: 'SAR',
+        value: 300,                         //this must be the price*QTY                     
+        items: [{                           // an array with a product that was added to a cart
+          item_name: 'Product 1',           // insert an actual product name
+          item_id: 'product1',              // insert an actual product ID
+          price: 300,                   // insert an actual product price. Number or a string. Don't include currency code
+          currency: "SAR",
+          discount: 100,                    // the actual discount of product
+          item_brand: 'brand A',            // insert an actual product price
+          item_category: 'Apparel',         // insert an actual product top-level category
+          item_category2: 'T-shirt',        // if it is possible to drill down the categories (e.g. Apparel, then T-shirt, then Men), use item_category2, item_category3, etc. Can use from item_category up to item_category5
+          item_list_name: 'Search results', // if a product is added to cart directly from product list, add the list name here
+          item_list_id: 'search_results',   // if a product is added to cart directly from product list, add the list id here
+          quantity: 1,                     // product quantity of how many products were added to a cart
+        }]
+      }
+    });
+    </script>
